@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link  rel="stylesheet" href=".\style.css">
+    <script src=".\script.js"></script>
+</head>
+<body>
+    <navbar>
+        <div><p>Project</p></div>
+        <div><p class="RPS">Rock Paper Sciccors</p></div>
+        <div class="HS">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Support</a></div>
+        </div>
+    </navbar>
+    
+    <div class="container ">
+        <div class="splitcontainerSide">
+            <div class="playerChoices">
+                <input  
+                        type="button"
+                        id="rockStart"
+                        value="rock" 
+                        onclick="rockRound()">
+                </input>
+            </div>
+            <div class="playerChoices">
+                <input id="paperStart"
+                        type="button"
+                        value="paper"
+                        onclick="paperRound()">
+                </input>
+            </div>
+            <div class="playerChoices">
+                <input  id="sciccorsStart"
+                        type="button"
+                        value="sciccors"
+                        onclick="sciccorsRound()">
+                    </input>
+            </div>
+        </div>
+        <div class="splitcontainerMiddle">
+            <div style="width:70%">
+                <p>Pick your weapon on the left side</p>
+                <p id="resultMessage">The first one to win 5 times wins the game</p>
+                <div class="score">
+                    <div class="scoreBoard">
+                        <div class="player">Player</div>
+                        <div id="playerScoree">0</div>
+                    </div>
+                    <div class="scoreBoard">
+                        <div class="computer">Computer</div>
+                        <div id="computerScoree">0</div>
+                    </div>
+                </div>
+                <button type="submit" id="playAgain" onclick="refreshPage()"> Good Luck </button>
+            </div>
+        </div>
+        <div class="splitcontainerSide">
+            <div class="computerChoices">
+                <a id="computerRock"> Rock </a>
+            </div>
+            <div class="computerChoices">
+                <a id="computerPaper"> Paper </a>
+            </div>
+            <div class="computerChoices">
+                <a id="computerSciccors"> Sciccors </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>

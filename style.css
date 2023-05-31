@@ -1,0 +1,147 @@
+body, html{
+    margin:0px;
+    box-sizing: border-box;
+    height:100%;
+}
+
+
+navbar{
+    display:flex;
+    background-color: blanchedalmond;
+    height: 15%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+
+.RPS{
+    font-size: x-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+navbar div{
+    display:flex;
+    height:100%;
+    align-items:center;
+}
+
+navbar > div:hover{
+    background-color: beige;
+    border-bottom: 4px dotted black;
+}
+
+
+.HS {
+    display: flex;
+    gap: 15px;
+    height: 100%;
+    align-items: center;
+    margin:8px;
+}
+
+.HS a{
+    text-decoration: none;
+    color:black;
+}
+
+.container{
+    display:flex;
+    height:85%;
+   
+}
+
+.splitcontainerSide{
+    display:flex;
+    border:2px solid black;
+    flex:1 2 auto;
+    width:25%;
+    flex-wrap:wrap}
+
+.splitcontainerMiddle{
+    display:flex;
+    flex:1 0 auto;
+    width:50%; 
+    justify-content: center;
+}
+
+.splitcontainerMiddle p{
+    color:red;
+    height:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.splitcontainerMiddle button{
+    color:red;
+    height:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:30px;
+}
+
+.score{
+
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.player{
+    border:2px solid red;
+}
+
+#playerScoree{
+    border: 2px solid red;
+}
+
+.computer{
+    border:2px solid red;
+}
+
+#computerScoree{
+    border:2px solid red;
+}
+
+#playAgain{
+    border: 3px solid black;
+}
+
+.playerChoices, .computerChoices{
+    border:2px solid green;
+    width:100%;
+
+}
+
+.playerChoices input{
+    width:100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: white;
+    
+}
+
+.playerChoices input:hover{
+    width:110%;
+    text-decoration: none;
+    background-color: gray;
+    
+}
+
+#playAgain:hover{
+    background-color: aliceblue;
+}
+
+.computerChoices{
+    display:flex;
+}
+.computerChoices a{
+    width:100%;
+    height:100%;
+    
+
+}
+
