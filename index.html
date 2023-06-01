@@ -8,35 +8,40 @@
 <body>
     <navbar>
         <div><p>Project</p></div>
-        <div><p class="RPS">Rock Paper Sciccors</p></div>
+        <div class="RPS"><p >Rock Paper Sciccors</p></div>
         <div class="HS">
             <div><a href="#">Game</a></div>
             <div><a href="#">Support</a></div>
         </div>
     </navbar>
     
-    <div class="container ">
+    <div class="container" style="width:80%">
         <div class="splitcontainerSide">
-            <div class="playerChoices" onclick="rockRound()">
+            <div class="playerChoices"  >
+                
                 <input  
+                        value="rock"
                         type="button"
-                        id="rockStart"
-                        value="rock" 
-                        >
+                        onclick="rockRound()" 
+                        id="rockStart"> 
+                        
+                        
                 </input>
             </div>
-            <div class="playerChoices">
-                <input id="paperStart"
+            <div class="playerChoices" >
+                <input 
                         type="button"
                         value="paper"
-                        onclick="paperRound()">
+                        onclick="paperRound()"
+                        id="paperStart">
                 </input>
             </div>
-            <div class="playerChoices">
-                <input  id="sciccorsStart"
+            <div class="playerChoices" >
+                <input  
                         type="button"
                         value="sciccors"
-                        onclick="sciccorsRound()">
+                        onclick="sciccorsRound()" 
+                        id="sciccorsStart">
                     </input>
             </div>
         </div>

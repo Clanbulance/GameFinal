@@ -21,7 +21,7 @@ function resetMakeUp(){
     //document.getElementById("rockStart").style.backgroundColor= "white";
     //document.getElementById("computerSciccors").style.backgroundColor= "white";
     //document.getElementById("sciccorsStart").style.backgroundColor= "white";
-    document.querySelectorAll(".playerChoices input, .computerChoices").forEach(elem => {elem.style.backgroundColor= "white";});
+    document.querySelectorAll(".playerChoices input, .computerChoices").forEach(elem => {elem.style.backgroundColor= "lightgoldenrodyellow";});
     document.getElementById("resultMessage").innerHTML = "The first one to win 5 times wins the game";
 }
 
@@ -85,7 +85,7 @@ function round(computerSelection,playerSelection){
 
 
         }   else if ( computerSelection === "rock" && playerSelection == "paper"){
-                document.getElementById("computerRock").style.backgroundColor= "red";
+                document.getElementById("computerRockID").style.backgroundColor= "red";
                 document.getElementById("paperStart").style.backgroundColor= "green";
                  playerScore = playerScore +1;
                  document.getElementById("playerScoree").innerHTML= playerScore;
@@ -93,7 +93,7 @@ function round(computerSelection,playerSelection){
 
 
         }   else if (computerSelection === "paper" && playerSelection == "sciccors"){
-                document.getElementById("computerPaper").style.backgroundColor= "red";
+                document.getElementById("computerPaperID").style.backgroundColor= "red";
                 document.getElementById("sciccorsStart").style.backgroundColor= "green";
                 playerScore = playerScore +1;
                 document.getElementById("playerScoree").innerHTML= playerScore;
@@ -101,7 +101,7 @@ function round(computerSelection,playerSelection){
                 return "You Win!";
 
         }   else if (computerSelection === "sciccors" && playerSelection == "rock"){
-                 document.getElementById("computerSciccors").style.backgroundColor= "red";
+                 document.getElementById("computerSciccorsID").style.backgroundColor= "red";
                  document.getElementById("rockStart").style.backgroundColor= "green";
                  playerScore = playerScore +1;
                  document.getElementById("playerScoree").innerHTML= playerScore;
