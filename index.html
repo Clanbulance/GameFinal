@@ -17,12 +17,12 @@
     
     <div class="container ">
         <div class="splitcontainerSide">
-            <div class="playerChoices">
+            <div class="playerChoices" onclick="rockRound()">
                 <input  
                         type="button"
                         id="rockStart"
                         value="rock" 
-                        onclick="rockRound()">
+                        >
                 </input>
             </div>
             <div class="playerChoices">
@@ -58,13 +58,13 @@
             </div>
         </div>
         <div class="splitcontainerSide">
-            <div class="computerChoices">
+            <div class="computerChoices" id="computerRockID">
                 <a id="computerRock"> Rock </a>
             </div>
-            <div class="computerChoices">
+            <div class="computerChoices" id="computerPaperID">
                 <a id="computerPaper"> Paper </a>
             </div>
-            <div class="computerChoices">
+            <div class="computerChoices" id="computerSciccorsID">
                 <a id="computerSciccors"> Sciccors </a>
             </div>
         </div>

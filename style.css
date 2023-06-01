@@ -128,37 +128,52 @@ navbar > div:hover{
 }
 
 .playerChoices, .computerChoices{
-    border:2px solid green;
     width:100%;
+    
 
+}
+
+.playerChoices{
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    height:20%;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid red;
 }
 
 .playerChoices input{
+    border:none;
+    background-color: transparent;
     width:100%;
-    height: 100%;
-    text-decoration: none;
-    background-color: white;
+    height:100%;
+    border-radius: 20px;
+}
 
+.computerChoices {
+    border-radius: 20px;
+    background-color: lightgoldenrodyellow;
+    height:20%;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid red;
     
 }
 
-.playerChoices input:hover{
-    text-decoration: none;
-    background-color: gray;
-    
+
+
+.computerChoices a{
+    border:2px red solid;
 }
+
 
 #playAgain:hover{
     background-color: aliceblue;
 }
 
-.computerChoices{
-    display:flex;
-}
-.computerChoices a{
-    width:100%;
-    height:100%;
-    
 
-}
 

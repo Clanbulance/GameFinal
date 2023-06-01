@@ -21,7 +21,7 @@ function resetMakeUp(){
     //document.getElementById("rockStart").style.backgroundColor= "white";
     //document.getElementById("computerSciccors").style.backgroundColor= "white";
     //document.getElementById("sciccorsStart").style.backgroundColor= "white";
-    document.querySelectorAll(".playerChoices input, .computerChoices a").forEach(elem => {elem.style.backgroundColor= "white";});
+    document.querySelectorAll(".playerChoices input, .computerChoices").forEach(elem => {elem.style.backgroundColor= "white";});
     document.getElementById("resultMessage").innerHTML = "The first one to win 5 times wins the game";
 }
 
@@ -75,11 +75,11 @@ function round(computerSelection,playerSelection){
                 console.log("                It's a tie!            ")
                 document.getElementById("resultMessage").innerHTML= "TIE";
                 if (computerSelection === "rock" && playerSelection === "rock"){
-                    document.querySelectorAll("#computerRock, #rockStart").forEach(elem => {elem.style.backgroundColor= "blue";})
+                    document.querySelectorAll("#computerRockID, #rockStart").forEach(elem => {elem.style.backgroundColor= "blue";})
                 } else if (computerSelection === "paper" && playerSelection === "paper"){
-                    document.querySelectorAll("#computerPaper, #paperStart").forEach(elem => {elem.style.backgroundColor= "blue";})
+                    document.querySelectorAll("#computerPaperID, #paperStart").forEach(elem => {elem.style.backgroundColor= "blue";})
                 } else if (computerSelection === "sciccors" && playerSelection === "sciccors") {
-                    document.querySelectorAll("#computerSciccors, #sciccorsStart").forEach(elem => {elem.style.backgroundColor= "blue";})
+                    document.querySelectorAll("#computerSciccorsID, #sciccorsStart").forEach(elem => {elem.style.backgroundColor= "blue";})
                 }
                 return "It's a tie!";
 
@@ -113,12 +113,12 @@ function round(computerSelection,playerSelection){
                 document.getElementById("computerScoree").innerHTML= computerScore;
                 if (computerSelection === "paper" && playerSelection === "rock"){
                     document.getElementById("rockStart").style.backgroundColor = "red";
-                    document.getElementById("computerPaper").style.backgroundColor = "green";
+                    document.getElementById("computerPaperID").style.backgroundColor = "green";
                 } else if (computerSelection === "rock" && playerSelection === "sciccors"){
-                    document.getElementById("computerRock").style.backgroundColor = "green";
+                    document.getElementById("computerRockID").style.backgroundColor = "green";
                     document.getElementById("sciccorsStart").style.backgroundColor = "red";
                 } else if (computerSelection === "sciccors" && playerSelection === "paper") {
-                    document.getElementById("computerSciccors").style.backgroundColor = "green";
+                    document.getElementById("computerSciccorsID").style.backgroundColor = "green";
                     document.getElementById("paperStart").style.backgroundColor = "red";  
                 }
                 return computerSelection +  " beats"+" " + playerSelection + ", you lose!";
